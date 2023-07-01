@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/podcast.png" type="image/x-icon" alt="Website Favicon">
+  <title>The Scam Master</title>
+  <style>
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+    }
+    
+    .logo {
+      display: inline-block;
+    }
+    
+    .navigation {
+      display: flex;
+      font-weight: bold;
+    }
+    
+    .navigation a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    
+    /* Hero section */
+    .hero {
+      background-color: #000;
+      color: #fff;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 150px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(to right, yellow, orange, red);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: font-size 0.5s;
+    }
+    
+    .hero p {
+      font-size: 22px;
+      margin-top: 20px;
+      font-weight: bolder;
+    }
+    
+    .listen-button {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-top: 30px;
+      background-color: red;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+      font-weight: bold;
+    }
+    
+    .listen-button:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Listen section */
+    .listen {
+      background-color: #fff;
+      color: #000;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .listen h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: underline red;
+    }
+    
+    .listen-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    
+    .listen-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: filter 0.2s;
+    }
+    
+    .listen-icons a:hover {
+      filter: brightness(1.2);
+    }
+    
+    /* Episodes section */
+    .episodes {
+      background-color: #fff;
+      color: #000;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .episodes h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: underline red;
+    }
+    
+    .episode-card {
+      display: inline-block;
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      color: #000;
+      transition: transform 0.2s, background-color 0.2s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .episode-card:hover {
+      transform: scale(1.05);
+      background-color: #f8f8f8;
+    }
+    
+    .episode-card h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    .episode-card a {
+      display: block;
+      margin-top: 10px;
+      color: #fff;
+      text-decoration: none;
+      background-color: black;
+      padding: 8px 16px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+    
+    .episode-card a:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Social media section */
+    .social-media {
+      background-color: #fff;
+      color: #000;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .social-media h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: underline red;
+    }
+    
+    .social-media-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    
+    .social-media-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      transition: filter 0.2s;
+    }
+    
+    .social-media-icons a:hover {
+      filter: brightness(1.2);
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+        
+    /* Media Query */
+    @media (max-width: 1200px) {
+      .navigation a {
+        font-weight: bold;
+      }
+      
+      .episodes h2,
+      .social-media h2 {
+        font-weight: bold;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 60px;
+      }
+      
+      .episode-card {
+        margin: 10px;
+        padding: 10px;
+      }
+      
+      .episode-card h3 {
+        font-size: 18px;
+      }
+      
+      .episode-card a {
+        padding: 6px 12px;
+      }
+    }
+    
+    /* Additional styles */
+    @media (max-width: 992px) {
+      .hero {
+        padding: 30px;
+      }
+      
+      .episodes {
+        padding: 30px;
+      }
+      
+      .listen {
+        padding: 30px;
+      }
+      
+      .social-media {
+        padding: 30px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero {
+        padding: 20px;
+      }
+	.hero h1 {
+       font-size: 30px; /* Adjust the font size for mobile */
+      } 
+      .episodes {
+        padding: 20px;
+      }
+      
+      .listen {
+        padding: 20px;
+      }
+      
+      .social-media {
+        padding: 20px;
+      }
+      
+      .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .navigation a {
+        margin: 10px 0;
+      }
+      
+      .navigation .contact-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/microphone.png" alt="The Scam Master" width="95">
+    </div>
+    <nav class="navigation">
+      <a href="https://podcasters.spotify.com/pod/show/thescammaster">Profile Page</a>
+      <a href="https://asht_no.t.me/">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- Hero section -->
+  <section class="hero">
+    <h1>The Scam Master</h1>
+    <p>The podcast that exposes the tricks and traps of fraudsters and teaches you how to outwit them.</p>
+    <a class="listen-button" href="https://podcasters.spotify.com/pod/show/thescammaster">Listen Now</a>
+  </section>
+  
+  <!-- Listen section -->
+  <section class="listen">
+    <h2>Listen on your Favorite Platform</h2>
+    <div class="listen-icons">
+      <a href="https://www.youtube.com/@scam_master/podcasts"><img src="images/youtube.png" alt="YouTube" width="80"></a>
+      <a href="https://open.spotify.com/show/0Zled4aLCnPfiZxlfdx8h3"><img src="images/spotify.png" alt="Spotify" width="80"></a>
+      <a href="https://music.amazon.co.uk/podcasts/3d740df3-2d4b-42f5-8a93-29ffa1bf7d76/the-scam-master"><img src="images/amazon-music.png" alt="Amazon Music" width="80"></a>
+      <!-- Add more platform icons as needed -->
+    </div>
+  </section>
+  
+  <!-- Episodes section -->
+  <section class="episodes">
+    <h2>Latest Episodes</h2>
+    <div class="episode-card">
+      <h3>Episode 2: Dark Side of Online Dating Scam</h3>
+      <a href="https://open.spotify.com/episode/6hvI50Jl0vuVkNFsORHOS9?si=wIb_EzFGSDih2_XrKV8aUg">Listen</a>
+    </div>
+    <div class="episode-card">
+      <h3>Episode 1: The Psychology of Social Engineering</h3>
+      <a href="https://open.spotify.com/episode/5kirHuIf0IUB3fgLbrHOPX?si=fp0KaFaCTjKBCbzKQT87gQ">Listen</a>
+    </div>
+  </section>
+  
+  <!-- Social media section -->
+  <section class="social-media">
+    <h2>Follow us on Social Media</h2>
+    <div class="social-media-icons">
+      <a href="https://www.instagram.com/the_scam_master/"><img src="images/instagram.png" alt="Instagram" width="90"></a>
+      <!-- Add more social media icons as needed -->
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>The Scam Master &copy; 2023. All rights reserved.<b> Website design by tan._.may</b></p>
+  </footer>
+</body>
+</html>
