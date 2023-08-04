@@ -17,13 +17,22 @@
       font-family: Arial, sans-serif;
     }
     
+    /* Container for the header and hero section */
+    .header-hero-container {
+      position: relative;
+      background-image: url('images/background.png');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    
     /* Header */
     header {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px;
-      background-color: #000;
       color: #fff;
     }
     
@@ -44,8 +53,7 @@
     
     /* Hero section */
     .hero {
-      background-color: #000;
-      color: #fff;
+      position: relative;
       padding: 50px;
       text-align: center;
     }
@@ -210,7 +218,7 @@
       color: #fff;
       text-decoration: none;
     }
-        
+    
     /* Media Query */
     @media (max-width: 1200px) {
       .navigation a {
@@ -265,8 +273,8 @@
       .hero {
         padding: 20px;
       }
-	.hero h1 {
-       font-size: 30px; /* Adjust the font size for mobile */
+      .hero h1 {
+        font-size: 30px; /* Adjust the font size for mobile */
       } 
       .episodes {
         padding: 20px;
@@ -297,23 +305,27 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="images/microphone.png" alt="The Scam Master" width="95">
-    </div>
-    <nav class="navigation">
-      <a href="https://podcasters.spotify.com/pod/show/thescammaster">Profile Page</a>
-      <a href="https://asht_no.t.me/">Contact</a>
-    </nav>
-  </header>
-  
-  <!-- Hero section -->
-  <section class="hero">
-    <h1>The Scam Master</h1> <!-- Added h1 tag for the main heading -->
-    <p>The podcast that exposes the tricks and traps of fraudsters and teaches you how to outwit them.</p>
-    <a class="listen-button" href="https://podcasters.spotify.com/pod/show/thescammaster">Listen Now</a>
-  </section>
+   <!-- Container for the header and hero section -->
+  <div class="header-hero-container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="images/microphone.png" alt="The Scam Master" width="95">
+      </div>
+      <nav class="navigation">
+        <a href="https://podcasters.spotify.com/pod/show/thescammaster">Profile Page</a>
+        <a href="https://asht_no.t.me/">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <h1>The Scam Master</h1>
+      <p>The podcast that exposes the tricks and traps of fraudsters and teaches you how to outwit them.</p>
+      <a class="listen-button" href="https://podcasters.spotify.com/pod/show/thescammaster">Listen Now</a>
+    </section>
+  </div>
+
   
   <!-- Listen section -->
   <section class="listen">
