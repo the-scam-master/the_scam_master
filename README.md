@@ -10,9 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="#listen">
-    <img src="images/listen_now_button.png" alt="Listen Now" width="200">
-  </a>
+  [Listen Now](#listen)
 </p>
 
 ---
