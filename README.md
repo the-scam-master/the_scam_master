@@ -1,6 +1,6 @@
 <!-- Add a stylish header image here -->
 <p align="center">
-  <img src="images/header_image.png" alt="The Scam Master" width="500">
+  <img src="images/podcast.png" alt="The Scam Master" width="200">
 </p>
 
 <h1 align="center">The Scam Master</h1>
