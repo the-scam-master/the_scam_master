@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  [Listen Now](#listen)
+  [Listen Now]([#listen](https://podcasters.spotify.com/pod/show/thescammaster))
 </p>
 
 ---
